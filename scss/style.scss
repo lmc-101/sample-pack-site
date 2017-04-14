@@ -86,7 +86,7 @@ header {
 }
 
 button {
-    background-color: $mainColor;
+    background: linear-gradient(rgb(43,242,232), $mainColor);
     border-style: none;
     border-color: $mainColor;
     border-width: 0;
