@@ -1,2 +1,116 @@
 @import 'reset';
 @import 'grid';
+@import 'variables';
+
+.container {
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+header, section, footer, .blue_stripe {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+header, section {
+    background-color: rgb(255, 255, 255);
+}
+
+section, footer {
+    justify-content: center;
+}
+
+header {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    border-bottom: 0.1vw solid $linkColor;
+    
+    .blue_stripe {
+        height: 1vw;
+        background-color: $mainColor;
+        align-self: flex-start;
+    }
+    .container {
+        flex-direction: column;
+        align-content: space-between;
+        justify-content: center;
+        position: relative;
+        height:15vw;
+        
+        
+        nav {
+            width: 100%;
+        }
+        
+        .logo {
+            width: 20%;
+            height: inherit;
+            position: absolute;
+            align-self: center;
+            background: red;
+        }
+    }
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: $textFont;
+    font-size: 1.5vw;
+    
+    li {
+        display: inline-block;   
+    }
+}
+
+.main_info_place {
+    border-bottom: 0.1vw solid $linkColor;
+    .container {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 30vw;
+    }
+}
+.main_message {
+    h1 {
+        font-family: $mainFont;
+        font-size: 6.8vw;
+    }
+}
+
+button {
+    background-color: $mainColor;
+    border-style: none;
+    border-color: $mainColor;
+    border-width: 0;
+    padding: 0;
+/*settings to even out reset styles*/
+    color: $buttonAttrColor;
+    font-size: 1.5vw;
+    font-family: $textFont;
+    border-radius: 0.5vw;
+    width: 25vw;
+    height: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0vw 0.3vw $buttonAttrColor;
+    margin-bottom: 3vw;
+}
+footer {
+    background-color: rgb(0, 0, 0);
+}
+
+
+
+
+
+
+
