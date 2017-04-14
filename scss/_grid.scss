@@ -1,5 +1,5 @@
 @for $col from 1 to 3 {
     .col-#{$col} {
-        width: $col * 33%;
+        width: $col * 32%;
     }
 }
