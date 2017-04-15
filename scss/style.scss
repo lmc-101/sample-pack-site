@@ -133,6 +133,7 @@ button {
 /*srticle section styles*/
 .articles_place {
     border-bottom: 0.1vw solid $linkColor; 
+    height: auto;
     .container {
         justify-content: space-between;
         padding-top: 2vw;
@@ -377,12 +378,18 @@ footer {
         height: 5vw;
         width: 5vw;
         border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         
-        img {
-            height: auto;
+        
+        a {
+            width: inherit;
+            height: inherit;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            img {
+                height: auto;
+            }
         }
     }
     
@@ -408,7 +415,6 @@ footer {
         color: $footerFontColor;
         font-family: $textFont; 
     }
-    
 }
 
 
