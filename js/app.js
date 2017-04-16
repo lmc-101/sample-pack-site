@@ -25,11 +25,36 @@ $(document).ready(function() {
 
 //ex.3: red ipsum's:
     
-    var ipsumIpsum = $('.article_text').html().find('ipsum', 'Ipsum');
+    var ipsumPlace = $('.article_text');
+    var ipsumButton = $('.main_info_place').find('button');
     
-    $('.article_text').hover(function(){
-        $(ipsumIpsum).css('color', 'red');
+    $(ipsumButton).click(function(){     
+        
+        $(ipsumPlace).each(function(){
+            
+            $(this).html($(this).html().replace(/ipsum/g, '<span>$&</span>'));
+            
+            $('p > span').css('color', 'red').delay(3000).queue(function() {
+                $('p>span').css('color', 'black');
+            });
+
+        });
+        
+        setTimeout(function(){
+            $('p > span').css('color', 'rgb(0,0,0)');
+            }, 3000);
+        
     });
+    
+    
+          
+//        $(".article_text > p:contains('ipsum')").each(function () {
+//    $(this).html($(this).html().replace("ipusm", "<span class='red'>ipsum</span>"));
+//});
+//       ipsumPlace.html($(ipsumPlace).html().replace(/ipsum/g, '<span style="color: red">$&</span>'));
+//        
+//    },3000);
+    
     
     
 });
