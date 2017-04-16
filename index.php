@@ -6,7 +6,6 @@
         <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Open+Sans" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
         <script   src="https://code.jquery.com/jquery-3.1.1.js"   integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="   crossorigin="anonymous"></script>
-        <script src='js/app.js'></script>
     </head>
     <body>
         <header>
@@ -22,13 +21,37 @@
                         <li><a href='#'>Contact</a></li>
                     </ul>
                 </nav>
-                <div class='logo'><img src='images/logo.png'</div> 
+                <div class='logo'><img src='images/logo.png'></div> 
             </div>
         </header>
         <section class='main_info_place'>
             <div class='container'>
-               <div class='main_message'>
-                   <h1>This is just a sample page</h1>
+                <div class='main_message'>
+                  <!-- main message heading changer -->
+                    <?php
+                        
+                        if($_SERVER ['REQUEST_METHOD'] === 'GET' ){
+                            
+                            if( isset($_GET['red_heading'])){
+                                
+                                echo '<h1 style="color: rgb(255,0,0);">This is just a sample page</h1>';
+                                  
+                            } else if( isset($_GET['different_heading'])){
+                                
+                                echo '<h1>Hello World!</h1>';
+                            
+                            } else {
+                                
+                                echo '<h1>This is just a sample page</h1>';
+                                
+                            } 
+                        } 
+
+                    ?>
+                  
+                  
+                  
+<!--                   <h1>This is just a sample page</h1>-->
                </div>
                <button>push the button</button> 
             </div>
@@ -107,13 +130,13 @@
         <section class='form_place'>
             <div class='container'>
                <h2>Contact us</h2>
-               <form>
+               <form method='POST' action='post.php'>
                   <div class='personal_info'>
                        <input type='text' name='name' placeholder='name'>
-                       <input type='email' name='email' placeholder='email'>
+                       <input type='email' name='e-mail' placeholder='e-mail'>
                        <input type='number' name='phone' placeholder='phone'>
                    </div>
-                   <textarea placeholder='your message'></textarea>
+                   <textarea type='text' name='message' placeholder='your message'></textarea>
                </form>
                <button type='submit'>send message</button>
             </div>
@@ -142,5 +165,6 @@
                 </div>
             </div>
         </footer>
+        <script src='js/app.js'></script>
     </body>
 </html>
