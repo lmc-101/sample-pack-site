@@ -30,6 +30,7 @@
                   <!-- main message heading changer -->
                     <?php
                         
+                    
                         if($_SERVER ['REQUEST_METHOD'] === 'GET' ){
                             
                             if( isset($_GET['red_heading'])){
@@ -130,7 +131,7 @@
         <section class='form_place'>
             <div class='container'>
                <h2>Contact us</h2>
-               <form method='POST' action='post.php'>
+               <form id='info_form' method='POST' action='post.php'>
                   <div class='personal_info'>
                        <input type='text' name='name' placeholder='name'>
                        <input type='email' name='e-mail' placeholder='e-mail'>
@@ -138,7 +139,7 @@
                    </div>
                    <textarea type='text' name='message' placeholder='your message'></textarea>
                </form>
-               <button type='submit'>send message</button>
+               <button type='submit' form='info_form'>send message</button>
             </div>
         </section>
         <section class='top_button'>
