@@ -127,6 +127,7 @@ button {
         box-shadow: inset 0 0.1vw 0.3vw 0 $buttonAttrColor;
         border: 0.1vw solid $buttonAttrColor;
         text-shadow: 0.05vw 0.05vw rgb(73, 247, 239);
+        background-color: $mainColor;
     }
 }
 

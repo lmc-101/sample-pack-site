@@ -37,23 +37,8 @@ $(document).ready(function() {
             $('p > span').css('color', 'red').delay(3000).queue(function() {
                 $('p>span').css('color', 'black');
             });
-
-        });
-        
-        setTimeout(function(){
-            $('p > span').css('color', 'rgb(0,0,0)');
-            }, 3000);
-        
+        }); 
     });
-    
-    
-          
-//        $(".article_text > p:contains('ipsum')").each(function () {
-//    $(this).html($(this).html().replace("ipusm", "<span class='red'>ipsum</span>"));
-//});
-//       ipsumPlace.html($(ipsumPlace).html().replace(/ipsum/g, '<span style="color: red">$&</span>'));
-//        
-//    },3000);
     
     
     
