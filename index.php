@@ -130,16 +130,18 @@
         </section>
         <section class='form_place'>
             <div class='container'>
-               <h2>Contact us</h2>
-               <form id='info_form' method='POST' action='post.php'>
-                  <div class='personal_info'>
-                       <input type='text' name='name' placeholder='name'>
-                       <input type='email' name='e-mail' placeholder='e-mail'>
-                       <input type='number' name='phone' placeholder='phone'>
-                   </div>
-                   <textarea type='text' name='message' placeholder='your message'></textarea>
-               </form>
-               <button type='submit' form='info_form'>send message</button>
+                <h2>Contact us</h2>
+                <form id='info_form' method='POST' action='post.php'>
+                    <div class='personal_info'>
+                        <input type='text' name='name' placeholder='name'>
+                        <input type='email' name='e-mail' placeholder='e-mail'>
+                        <input type='number' name='phone' placeholder='phone'>
+                    </div>
+                    <textarea type='text' name='message' placeholder='your message'></textarea>
+                    <div id='result'></div>
+                </form>
+                <button type='submit' form='info_form'>send message</button>
+                
             </div>
         </section>
         <section class='top_button'>
