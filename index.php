@@ -37,7 +37,6 @@
                   <!-- ex.1 - php-->
                    
                     <?php
-                        
                     
                         if($_SERVER ['REQUEST_METHOD'] === 'GET' ){
                             
@@ -52,7 +51,7 @@
                             } else {
                                 
                                 echo '<h1>This is just a sample page</h1>';
-                                
+                     
                             } 
                         } 
 
