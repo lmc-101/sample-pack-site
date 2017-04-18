@@ -14,6 +14,7 @@
 //każda informacja (tabela) ma być przesyłana w następującym formacie:
 // $label - oznacza atrybut name, zdefiniowany w pliku index.php w inputach;
 //$value - oznacza wartość, jaką użytkownik wpisał w dane pole;
+// dzięki temu problem z nowym polem formularza będzie nieistotny - nie odwołujemy się do wartości formularza 'po imieniu', tylko do ich rodzaju.
 //dodane zostały również style wyświetlanych elementów.
         }
     }

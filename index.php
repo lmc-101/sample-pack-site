@@ -2,7 +2,7 @@
 <html lang="pl-PL">
     <head>
         <meta charset="UTF-8">
-        <title>sample-pack-site</title>
+        <title>sample-pack-lidia-cicha</title>
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Open+Sans" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
@@ -19,7 +19,7 @@
                         <li><a href='#' class='clicked'>Home</a></li>
                         <li><a href='#'>Products</a></li>
                         <li class='logo_place'></li>
-                        <!-- this is just empty space for logo-->
+                        <!-- this is just empty space for logo - to get the responsive pixel-perfect effect-->
                         <li><a href='#'>About us</a></li>
                         <li><a href='#'>Contact</a></li>
                     </ul>
@@ -189,5 +189,6 @@
         <!--SCRIPT PLACE-->
         <script src='js/app.js'></script>
         <!--SCRIPT-->
+        
     </body>
 </html>

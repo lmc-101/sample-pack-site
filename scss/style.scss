@@ -2,8 +2,6 @@
 @import 'grid';
 @import 'variables';
 
-
-
 /*main styles*/
 .container {
     width: 80%;
@@ -89,7 +87,6 @@ header {
         }
     }
 }
-
 /*header*/
 
 /*secton 1*/
@@ -115,10 +112,10 @@ button {
     border-style: none;
     border-color: $mainColor;
     
-/*settings to even out reset styles*/   
+    /*settings to even out reset styles*/   
     border-width: 0;
     padding: 0;
-/*settings to even out reset styles*/
+    /*settings to even out reset styles*/
     
     color: $buttonAttrColor;
     font-size: 1.5vw;
@@ -133,7 +130,6 @@ button {
     margin-bottom: 3vw;
     
 /*button hover*/
-    
     &:hover {
         box-shadow: inset 0 0.1vw 0.3vw 0 $buttonAttrColor;
         border: 0.1vw solid $buttonAttrColor;
@@ -143,7 +139,6 @@ button {
 /*button hover*/
     
 }
-
 /*all buttons styles*/
 
 /*section 2*/
@@ -295,6 +290,13 @@ form {
         color: $fontColor;
         padding-left: 2vw;
         font-family: $textFont;
+        
+        &:focus {
+            outline-color: $buttonAttrColor;
+            outline: 1;
+            outline-width: thick;
+            border: 1px solid $buttonAttrColor;
+        }
     }
 }
 
@@ -321,7 +323,7 @@ form {
     font-family: $textFont;
 }
 /*placeolder styles*/
-
+    
 #result {
     display: none;
     flex-direction: row;
@@ -331,7 +333,6 @@ form {
 /*section 3*/
 
 /*section 4*/
-
 .top_button {
     .container {
         align-items: baseline;
@@ -358,7 +359,6 @@ form {
         }
     }
 }
-
 /*section 4*/
 
 /*footer*/
