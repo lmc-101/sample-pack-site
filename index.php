@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>sample-pack-site</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Open+Sans" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
         <script   src="https://code.jquery.com/jquery-3.1.1.js"   integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="   crossorigin="anonymous"></script>
@@ -28,6 +29,7 @@
             <div class='container'>
                 <div class='main_message'>
                   <!-- main message heading changer -->
+                  <!-- ex.1 - php-->
                     <?php
                         
                     
@@ -52,7 +54,6 @@
                   
                   
                   
-<!--                   <h1>This is just a sample page</h1>-->
                </div>
                <button>push the button</button> 
             </div>
@@ -135,7 +136,7 @@
                     <div class='personal_info'>
                         <input type='text' name='name' placeholder='name'>
                         <input type='email' name='e-mail' placeholder='e-mail'>
-                        <input type='number' name='phone' placeholder='phone'>
+                        <input type='tel' name='phone' placeholder='phone'>
                     </div>
                     <textarea type='text' name='message' placeholder='your message'></textarea>
                     <div id='result'></div>
