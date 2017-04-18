@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-//ex.1: smooth scroll:
+//ex.1 - jQuery: smooth scroll:
     $('.go_back').click(function(){
         $('html, body').animate({ scrollTop: 0 }, 'slow');
     });
@@ -23,7 +23,7 @@ $(document).ready(function() {
    
     });
 
-//ex.3: red ipsum's:
+//ex.3 - jQuery: red ipsum's:
     
     var ipsumPlace = $('.article_text');
     var ipsumButton = $('.main_info_place').find('button');
@@ -41,25 +41,25 @@ $(document).ready(function() {
     });
     
 
-//ex.4: ajax form handler 
+//ex.1 -Ajax: form handler 
     
-    /*just a bit of styling*/
+//just a bit of styling
     $("#result").css('font-family', 'Open Sans').css('text-align', 'center');
     
-    /*start function*/
+//start function
     $('form').submit(function(reload) {
         var submitForm;
 
-    /* Stop form from submitting normally */
+//Stop form from submitting with reload to post.php
         reload.preventDefault();
 
-    /* Clear result div*/
-    $("#result").html('');
+//Clear result div
+        $("#result").html('');
 
-    /* Get from elements values */
+//Get form elements values
         var formValues = $(this).serialize();
 
-    /* Send the data using post and put the results in a div */
+//Send the data using post and put the results in a div
   
         submitForm= $.ajax({
             url: 'post.php',
@@ -68,7 +68,7 @@ $(document).ready(function() {
         });
 
         submitForm.done(function (formValues){
-          // show successfully for submit message
+//show if submitting was successful
             
             $('.personal_info, textarea').fadeOut(1000, function(){
                 
@@ -78,17 +78,15 @@ $(document).ready(function() {
         });
 
         submitForm.fail(function (){
-
-       // show error
+//show error
+            
             $('.personal_info, textarea').fadeOut(1000, function(){
                 
                $('form').css('justify-content', 'center'); $("#result").html(formValues).fadeIn('slow');
             });
         });
-        
-        
-    
-    
-});
+   
+    });
+//end function
     
 });

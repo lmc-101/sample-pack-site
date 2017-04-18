@@ -1,3 +1,7 @@
+<!--form values display-->
+<!--ex.2 - php -->
+    
+
 <?php
 
     $formData = $_POST;

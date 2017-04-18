@@ -9,6 +9,8 @@
         <script   src="https://code.jquery.com/jquery-3.1.1.js"   integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="   crossorigin="anonymous"></script>
     </head>
     <body>
+       
+        <!--header-->
         <header>
             <div class='blue_stripe'></div>
             <div class='container'>
@@ -25,11 +27,15 @@
                 <div class='logo'><img src='images/logo.png'></div> 
             </div>
         </header>
+        <!--header-->
+        
+        <!--section 1: main info-->
         <section class='main_info_place'>
             <div class='container'>
                 <div class='main_message'>
                   <!-- main message heading changer -->
                   <!-- ex.1 - php-->
+                   
                     <?php
                         
                     
@@ -52,12 +58,13 @@
 
                     ?>
                   
-                  
-                  
                </div>
                <button>push the button</button> 
             </div>
         </section>
+        <!--section 1-->
+        
+        <!--section 2: articles-->
         <section class='articles_place'>
             <div class='container'>
                 <article class='col-1'>
@@ -129,6 +136,9 @@
             </div>
             
         </section>
+        <!--section 2-->
+        
+        <!--section 3: form -->
         <section class='form_place'>
             <div class='container'>
                 <h2>Contact us</h2>
@@ -145,11 +155,17 @@
                 
             </div>
         </section>
+        <!--section 3-->
+        
+        <!--section 4: scroll-top button-->
         <section class='top_button'>
             <div class='container'>
                 <div class='go_back'><a href='#'>back to top</a></div>
             </div>
         </section>
+        <!--section 4-->
+        
+        <!--footer-->
         <footer>
             <div class='container'>
                 <div class='footer_menu'>
@@ -169,6 +185,10 @@
                 </div>
             </div>
         </footer>
+        <!--footer-->
+        
+        <!--SCRIPT PLACE-->
         <script src='js/app.js'></script>
+        <!--SCRIPT-->
     </body>
 </html>

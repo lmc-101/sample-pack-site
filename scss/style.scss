@@ -1,7 +1,6 @@
 @import 'reset';
 @import 'grid';
 @import 'variables';
-@import 'media';
 
 
 
@@ -27,7 +26,9 @@ section, footer {
     justify-content: center;
 }
 
-/*header styles*/
+/*main styles*/
+
+/*header*/
 header {
     flex-direction: column;
     justify-content: space-between;
@@ -89,7 +90,9 @@ header {
     }
 }
 
-/*main section styles*/
+/*header*/
+
+/*secton 1*/
 .main_info_place {
     border-bottom: 0.1vw solid $linkColor;
     .container {
@@ -106,13 +109,17 @@ header {
     }
 }
 
+/*all buttons styles*/
 button {
     background: linear-gradient(rgb(43,242,232), $mainColor);
     border-style: none;
     border-color: $mainColor;
+    
+/*settings to even out reset styles*/   
     border-width: 0;
     padding: 0;
 /*settings to even out reset styles*/
+    
     color: $buttonAttrColor;
     font-size: 1.5vw;
     font-family: $textFont;
@@ -125,15 +132,21 @@ button {
     box-shadow: inset 0vw -0.3vw $buttonAttrColor;
     margin-bottom: 3vw;
     
+/*button hover*/
+    
     &:hover {
         box-shadow: inset 0 0.1vw 0.3vw 0 $buttonAttrColor;
         border: 0.1vw solid $buttonAttrColor;
         text-shadow: 0.05vw 0.05vw rgb(73, 247, 239);
         background-color: $mainColor;
     }
+/*button hover*/
+    
 }
 
-/*srticle section styles*/
+/*all buttons styles*/
+
+/*section 2*/
 .articles_place {
     border-bottom: 0.1vw solid $linkColor; 
     height: auto;
@@ -217,8 +230,9 @@ button {
         color: $mainColor;
     }
 }
+/*section 2*/
 
-/*form section styles*/
+/*section 3*/
 .form_place {
     padding-bottom: 2vw;
     .container {
@@ -306,6 +320,7 @@ form {
     color: $linkColor;
     font-family: $textFont;
 }
+/*placeolder styles*/
 
 #result {
     display: none;
@@ -313,8 +328,10 @@ form {
     justify-content: center;
     align-items: center;
 }
+/*section 3*/
 
-/*scroll top button styles*/
+/*section 4*/
+
 .top_button {
     .container {
         align-items: baseline;
@@ -342,7 +359,9 @@ form {
     }
 }
 
-/*footer styles*/
+/*section 4*/
+
+/*footer*/
 footer {
     background-color: rgb(0, 0, 0);
     padding: 3vw 0 6vw 0;
@@ -431,8 +450,9 @@ footer {
         font-family: $textFont; 
     }
 }
+/*footer*/
 
-//small devices
+/*styles for small devices*/
 @media (max-width: 540px) {
     
     
@@ -476,6 +496,7 @@ footer {
     }
 }
 
+/*styles for small devices*/
 
 
 
